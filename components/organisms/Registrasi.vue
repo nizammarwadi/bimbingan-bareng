@@ -7,11 +7,11 @@
                     <form>
                         <div class="form-group">
                             <label for="nama">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="nama" placeholder="Contoh: Nizam Marwadi">
+                            <input type="text" class="form-control" id="nama" placeholder="Contoh: Muda Juanri">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Contoh: nizammeei@gmail.com">
+                            <input type="email" class="form-control" id="email" placeholder="Contoh: mudajuan@mail.com">
                         </div>
                         <div class="form-group">
                             <label for="no.telp">Ponsel(Whatsaap)</label>

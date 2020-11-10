@@ -2,10 +2,10 @@
     <section class="intro">
         <div class="intro-middle-left">
             <p>Membantu bimbingan, mentoring dan penyelesaian Projek, Tugas Akhir  dan Penelitian berupa Website dan Aplikasi Mobile</p>
-            <button type="submit" class="intro-middle-button">Daptar</button>
+            <button type="submit" class="intro-middle-button" @click="toRegistrasi">Daptar</button>
         </div>
         <div class="intro-middle-right">
-            <img src="~/assets/images/intro.png" @click="toRegistrasi" alt="not found" class="image">
+            <img src="~/assets/images/intro.png" alt="not found" class="image">
         </div>   
     </section>
 </template>
@@ -15,10 +15,10 @@ export default {
     data() {
         return{
             buttonElement: "",
-        }
+        };
     },
     mounted() {
-        this.buttonElement = document.getElementById("registrasi")
+        this.buttonElement = document.getElementById("registrasi");
     },
     methods: {
         toRegistrasi() {
@@ -26,9 +26,9 @@ export default {
                 bahavior: "smooth",
                 block: "start",
                 inline: "nearest",
-            })
-        }
-    }
+            });
+        },
+    },
 }
 </script>
 
@@ -66,6 +66,7 @@ export default {
         border: 1px solid #FFFFFF;
         box-sizing: border-box;
         color: white;
+        background-color:#FFA500;
     }
     @media(max-width: 992px) {
         .intro {
