@@ -34,7 +34,8 @@ export default {
 <style>
     /* fist-benefit */
     .benefit {
-        margin-top: 100px;
+        margin-top: 30px;
+        padding-top: 70px;
     }
     .first-benefit-content {
         background-color: #F8F9FA;

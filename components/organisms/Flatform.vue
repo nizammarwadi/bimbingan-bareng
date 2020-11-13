@@ -1,8 +1,8 @@
 <template>
-    <section id="flatform" class="flatform">
-        <div class="flatform-title">
-            <h2 class="title">Flatform yang Didukung</h2>
-            <p class="text">Ada dua flatform yang didukung dan menjadi target pelayanan dari Bimbinganbareng, yaitu sebagai berikut</p>
+    <section id="platform" class="platform">
+        <div class="platform-title">
+            <h2 class="title">Platform yang Didukung</h2>
+            <p class="text">Ada dua platform yang didukung dan menjadi target pelayanan dari Bimbinganbareng, yaitu sebagai berikut</p>
         </div>
         <div class="website">
             <div class="website-image">
@@ -16,7 +16,7 @@
         <div class="mobile">
             <div class="mobile-text">
                 <h2 class="title">Aplikasi Mobile,<br> Android</h2>
-                <p class="text">Projek yang dihasilkan berupa aplikasi mobile yang dapat di gunakan di smartphone. Untuk saat ini masih mendukung environtment<br> Android</p>
+                <p class="text">Projek yang dihasilkan berupa aplikasi mobile yang dapat di gunakan di smartphone. Untuk saat ini masih mendukung environment<br> Android</p>
             </div>
             <div class="mobile-image">
                 <img src="~/assets/images/phone.png" style="width:238px; height:458px;" alt="not found">
@@ -32,18 +32,18 @@ export default {
 </script>
 
 <style>
-    .flatform {
-        margin: 70px 0px;
-        padding: 30px 0px;
+    .platform {
+        margin: 40px 0px;
+        padding: 70px 0px 0px 0px;
     }
-    .flatform-title .title {
+    .platform-title .title {
         margin: 0px auto;
         text-align: center;
         font-size: 27px;
         font-weight: 700;
         
     }
-    .flatform-title .text {
+    .platform-title .text {
         font-size: 18px;
         font-weight: 450;
         margin: 0px auto;
@@ -128,7 +128,7 @@ export default {
         .mobile-text .title {
             margin: 60px 0px 10px;
         }
-        .flatform-title .text {
+        .platform-title .text {
             width: 100%;
             font-size: 16px;
             margin: 0px auto;

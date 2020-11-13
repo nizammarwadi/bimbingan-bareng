@@ -44,7 +44,7 @@ export default {
     },
     mounted() {
         this.serviceSection = document.getElementById("service");
-        this.benefitSection = document.getElementById("benefit")
+        this.benefitSection = document.getElementById("benefit");
         this.teknologiSection = document.getElementById("teknologi");
         this.flatformSection = document.getElementById("flatform");
         this.footerSection = document.getElementById("footer");
@@ -56,7 +56,7 @@ export default {
         },
         toServiceSection() {
             this.serviceSection.scrollIntoView ({
-                bahavior: "smooth",
+                behavior: "smooth",
                 block: "start",
                 inline: "nearest",
             });
@@ -64,7 +64,7 @@ export default {
         },
         toBenefitSection() {
             this.benefitSection.scrollIntoView({
-                bahavior: "smooth",
+                behavior: "smooth",
                 block: "start",
                 inline: "nearest",
             });
@@ -72,27 +72,26 @@ export default {
         },
         toTeknologiSection() {
             this.teknologiSection.scrollIntoView({
-                bahavior: "smooth",
+                behavior: "smooth",
                 block: "start",
                 inline: "nearest",
             });
         },
         toFlatformSection() {
             this.flatformSection.scrollIntoView({
-                bahavior: "smooth",
+                behavior: "smooth",
                 block: "start",
                 inline: "nearest",
             });
         },
         toFooterSection() {
             this.footerSection.scrollIntoView({
-                bahavior: "smooth",
+                behavior: "smooth",
                 block: "start",
                 inline: "nearest",
             })
         }
     }
-    
 }
 </script>
 

@@ -6,27 +6,37 @@
                     <h2 class="title">Daptar Sekarang</h2>
                     <form>
                         <div class="form-group">
-                            <label for="nama">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="nama" placeholder="Contoh: Muda Juanri">
+                            <label for="name">Nama Lengkap</label>
+                            <input @keypress="checkValueName" type="text" class="form-control" id="name" placeholder="Contoh: Muda Juanri">
+                            <small id="error-name" class="form-text text-muted" style="color: red !important"></small>
+
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Contoh: mudajuan@mail.com">
+                            <input @keypress="checkValueEmail" type="email" class="form-control" id="email" placeholder="Contoh: mudajuan@mail.com">
+                            <small id="error-email" class="form-text text-muted" style="color: red !important"></small>
+
                         </div>
                         <div class="form-group">
-                            <label for="no.telp">Ponsel(Whatsaap)</label>
-                            <input type="text" class="form-control" id="no.telp" placeholder="Contoh: 0822 2123 5445">
+                            <label for="phone">Ponsel(Whatsaap)</label>
+                            <input @keypress="checkValuePhone" type="number" class="form-control" id="phone" placeholder="Contoh: 0822 2123 5445">
+                            <small id="error-phone" class="form-text text-muted" style="color: red !important"></small>
+
                         </div>
                         <div class="form-group">
-                            <label for="no.telp">Judul Projek</label>
-                            <input type="text" class="form-control" id="no.telp" placeholder="Contoh: Website portal berita kampus">
+                            <label for="project">Judul Projek</label>
+                            <input @keypress ="checkValueProject" type="text" class="form-control" id="project" placeholder="Contoh: Website portal berita kampus">
+                            <small id="error-project" class="form-text text-muted" style="color: red"></small>
+
                         </div>
                         <div class="form-group">
-                            <label for="pesan">Deskripsi Tentang Projek</label>
-                            <textarea name="pesan" rows="5" id="pesan" class="form-control textarea" placeholder="Contoh: Jadi saya ingin membuat projek tugas akhir berupa web berita portal kampus"></textarea>
+                            <label for="mesaage">Deskripsi Tentang Projek</label>
+                            <textarea @keypress="checkValueMessage" name="message" rows="5" id="message" class="form-control textarea" placeholder="Contoh: Jadi saya ingin membuat projek tugas akhir berupa web berita portal kampus"></textarea>
+                            <small id="error-message" class="form-text text-muted" style="color: red !important"></small>
+
                         </div>
                         <div class="form-group flex-auto">
-                            <button type="submit" class="btn btn-info">Daptar</button>
+                            <button type="submit" class="btn btn-info" @click="validataInput">Daptar</button>
                         </div>
                     </form>
                 </div>
@@ -44,7 +54,79 @@
 
 <script>
 export default {
-
+    data() {
+        return {
+            name: '',
+            email: '',
+            phone: '',
+            project: '',
+            message: '',
+            errorElementName: '',
+            errorElementEmail: '',
+            errorElementPhone: '',
+            errorElementProject: '',
+            errorElementMessage: '',
+        }
+    },
+    mounted() {
+        this.name = document.getElementById('name')
+        this.email = document.getElementById('email')
+        this.phone = document.getElementById('phone')
+        this.project = document.getElementById('project')
+        this.message = document.getElementById('message')
+        this.errorElementName = document.getElementById('error-name')
+        this.errorElementEmail = document.getElementById('error-email')
+        this.errorElementPhone = document.getElementById('error-phone')
+        this.errorElementProject = document.getElementById('error-project')
+        this.errorElementMessage = document.getElementById('error-message')
+    },
+    methods: {
+        validataInput() {
+            if(name.value == '') {
+                errorElementName.innerHTML = 'nama tidak boleh kosong'
+            }
+            if(email.value == '') {
+                errorElementEmail.innerHTML = 'email tidak boleh kosong'
+            }
+            if(phone.value == '') {
+                errorElementPhone.innerHTML = 'wajib di isi'
+            }
+            if(project.value == '') {
+                errorElementProject.innerHTML = 'wajib di isi'
+            }
+            if(message.value == '') {
+                errorElementMessage.innerHTML = 'wajib di isi'
+            }
+            if(name.value !='' && email.value !='' && phone.value !='' && project.value !='' && message.value !='') {
+                alert(`${name.value}, ${email.value}, ${phone.value}, ${project.value}, ${message.value} di kirim`)
+            }
+        },
+        checkValueName() {
+            if (name.value !='') {
+                errorElementName.innerHTML =''
+            }
+        },
+        checkValueEmail() {
+            if (email.value !='') {
+                errorElementEmail.innerHTML =''
+            }
+        }, 
+        checkValuePhone() {
+            if (phone.value !='') {
+                errorElementPhone.innerHTML = ''
+           }
+        },
+        checkValueProject() {
+            if (project.value !='') {
+                errorElementProject.innerHTML =''
+            }
+        },
+        checkValueMessage() {
+            if (message.value !='') {
+                errorElementMessage.innerHTML =''
+            }
+        },
+    }
 }
 </script>
 

@@ -25,7 +25,7 @@
                         <div class="contact-us-call">
                             <h5>Hubungi Kami</h5>
                             <div class="call-number">
-                                <img src="~/assets/images/call.png" alt="not found">
+                                <a href="https://wa.me/6282362574353?text=Oops...%0AJangan%20galau%20dan%20resah%2C%20kita%20siap%20bantu%20Bro%20and%20Sist%20...%0ASelamat%20datang%20di%20Bimbinganbareng.com%0A" target="_blank"><img src="~/assets/images/call.png" alt="not found"></a>
                                 <p><a href="https://wa.me/6282362574353?text=Oops...%0AJangan%20galau%20dan%20resah%2C%20kita%20siap%20bantu%20Bro%20and%20Sist%20...%0ASelamat%20datang%20di%20Bimbinganbareng.com%0A" target="_blank">0823-6257-4353</a></p>
                             </div>
                         </div>

@@ -5,27 +5,27 @@
             <p class="text">Bimbinganbareng menggunakan dan stack yang paling banyak digunakan di dunia kerja dan Startup,diantaranya sebagai berikut</p>
         </div>
         <div class="teknologi-images">
-            <div class="vue" style="width: 80px">
-                <img src="~/assets/images/vue.png" style="width:70px;" alt="not found">
+            <div class="vue">
+                <img src="~/assets/images/vue.png" alt="not found">
                 <p>Vue.js</p>
             </div>
-            <div class="react" style="width:160px">
-                <img src="~/assets/images/react.png" style="width:150px;" alt="not found">
+            <div class="react">
+                <img src="~/assets/images/react.png" alt="not found">
                 <p>React Js React Native</p>
                 
             </div>
-            <div class="node" style="width: 230px">
+            <div class="node">
                 <img src="~/assets/images/node.png" alt="not found">
                 <p>Node.js</p>
                 
             </div>
-            <div class="golang" style="width: 100px">
-                <img src="~/assets/images/golang.png" style="width:90px;" alt="not found">
+            <div class="golang">
+                <img src="~/assets/images/golang.png" alt="not found">
                 <p>Golang</p>
                 
             </div>
-            <div class="python" style="width: 100px">
-                <img src="~/assets/images/python.png" style="width:70px;" alt="not found">
+            <div class="python">
+                <img src="~/assets/images/python.png" alt="not found">
                 <p>Phyton</p>
                 
             </div>
@@ -43,7 +43,7 @@ export default {
     .teknologi {
         margin-top: 100px;
         background-color: #F8F9FA;
-        padding: 40px 0px;
+        padding: 70px 0px 40px 0px;
         
     }
     .teknologi-title .title{
@@ -70,18 +70,35 @@ export default {
     }
     .vue img {
         margin: 25px 0px 30px;
+        width:70px;
+    }
+    .vue {
+        width: 80px;
+    }
+    .node {
+        width: 230px;
+    }
+    .react {
+        width: 160px;
     }
     .golang{
         margin: 0px 20px;
+        width: 100px;
+    }
+    .python{
+        width: 100px;
     }
     .golang img {
         margin: 10px 0px 20px;
+        width:90px;
     }
     .python img {
         margin: 20px 0px 30px;
+        width:70px;
     }
     .react img {
         margin-bottom: 15px;
+        width:150px
     }
     .react p{
         width: 100px;
@@ -90,12 +107,78 @@ export default {
     .node img {
         margin-bottom: 10px;
     }
-
+    @media (max-width: 768px) {
+        .teknologi-title .text {
+            width: 100%;
+            margin: 0px 0px;
+            padding: 0px 20px;
+            font-size: 16px;
+        }
+        .teknologi-title .title {
+            width: 100%;
+            margin: 0px 0px 10px 0px;
+            padding: 0px 0px;
+        }
+        .teknologi-images {
+            width: 100%;
+            margin: 0px 0px;
+            padding: 30px 10px;
+        }
+        .vue {
+            width: 100%;
+            margin: 0px 0px 0px;
+            padding: 0px 0px;
+        }
+        .react {
+            width: 100%;
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+        .node {
+            width: 100%;
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+        .golang {
+            width: 100%;
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+        .python {
+            width: 100%;
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+        .vue img {
+            width: 40px;
+            margin: 23px auto 19px;
+            padding: 0px 0px;
+        }
+        .react img {
+            width: 110px;
+            margin: 0px auto 3px;
+            padding: 0px 0px;
+        }
+        .node img {
+            width: 70px;
+            margin: 20px auto 23px;
+            padding: 0px 0px;
+        }
+        .golang img {
+            width: 50px;
+            margin: 18px auto 10px;
+            padding: 0px 0px;
+        }
+        .python img {
+            width: 45px;
+            margin: 20px auto 15px;
+            padding: 0px 0px;
+        }
+    }
     
 
-    /* mobile */
-    @media(max-width: 768px) {
-        
+    /* untuk ukuran vertical */
+    /* @media(max-width: 768px) {
         .teknologi-title .title {
             width: 100%;
             margin: 0px 0px;
@@ -132,7 +215,7 @@ export default {
             width: 100%;
             margin: 0px auto;
         }
-    }
+    } */
    
         
     

@@ -32,7 +32,8 @@ export default {
 
 <style>
     .service{
-        margin-top: 80px;
+        margin-top: 0px;
+        padding: 70px 0px 0px 0px;
         margin-bottom: 50px;
     }
     .service-title .service-title-top {

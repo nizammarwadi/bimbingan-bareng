@@ -66,7 +66,6 @@ export default {
         border: 1px solid #FFFFFF;
         box-sizing: border-box;
         color: white;
-        background-color:#FFA500;
     }
     @media(max-width: 992px) {
         .intro {
