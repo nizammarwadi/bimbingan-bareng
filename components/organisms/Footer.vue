@@ -50,7 +50,7 @@ export default {
     .footer{
         background-color: #F8F9FA;
         color: #131;
-        padding: 60px 0px;
+        padding: 80px 0px;
     }
     .row {
         justify-content: space-between;

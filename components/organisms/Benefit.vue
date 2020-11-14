@@ -91,8 +91,8 @@ export default {
     @media(max-width: 768px) {
         .benefit {
             width: 100%;
-            margin: 0px 0px;
-            padding: 20px 0px;
+            margin-top: 30px;
+            padding: 70px 0px;
             background-color: #f8f9fa;
         }
         .first-benefit {

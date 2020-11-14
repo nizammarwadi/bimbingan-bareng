@@ -77,8 +77,8 @@ export default {
     @media(max-width: 768px) {
         .service {
             width: 100%;
-            margin: 50px 0px;
-            padding: 0px 0px;
+            margin: 0px 0px;
+            padding-top: 80px;
         }
         .service-title .service-title-top {
             margin: 0px 0px;

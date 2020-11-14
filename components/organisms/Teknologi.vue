@@ -108,6 +108,9 @@ export default {
         margin-bottom: 10px;
     }
     @media (max-width: 768px) {
+        .teknologi {
+            margin: 0px 0px;
+        }
         .teknologi-title .text {
             width: 100%;
             margin: 0px 0px;
@@ -173,6 +176,9 @@ export default {
             width: 45px;
             margin: 20px auto 15px;
             padding: 0px 0px;
+        }
+        .teknologi-images p {
+            font-size: 11px;
         }
     }
     

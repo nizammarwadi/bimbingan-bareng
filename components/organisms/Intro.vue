@@ -23,7 +23,7 @@ export default {
     methods: {
         toRegistrasi() {
             this.buttonElement.scrollIntoView({
-                bahavior: "smooth",
+                behavior: "smooth",
                 block: "start",
                 inline: "nearest",
             });
@@ -71,7 +71,7 @@ export default {
         .intro {
             display: block;
             margin: 50px 0px 0px 0px;
-            padding: 60px 0px 20px 0px;
+            padding: 60px 0px 0px 0px;
             widows: 100%;
         }
         .intro-middle-left {

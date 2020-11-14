@@ -17,7 +17,7 @@
                         <a class="nav-link js-scroll-trigger text-white" @click="toTeknologiSection">Teknologi</a>
                     </li>
                         <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger text-white" @click="toFlatformSection">Platform</a>
+                        <a class="nav-link js-scroll-trigger text-white" @click="toPlatformSection">Platform</a>
                     </li>
                         <li class="nav-item">
                         <a class="nav-link js-scroll-trigger text-white"  @click="toFooterSection">Tentang Kami</a>
@@ -38,7 +38,7 @@ export default {
             serviceSection: "",
             benefitSection: "",
             teknologiSection: "",
-            flatformSection: "",
+            platformSection: "",
             footerSection: "",
         };
     },
@@ -46,7 +46,7 @@ export default {
         this.serviceSection = document.getElementById("service");
         this.benefitSection = document.getElementById("benefit");
         this.teknologiSection = document.getElementById("teknologi");
-        this.flatformSection = document.getElementById("flatform");
+        this.platformSection = document.getElementById("platform");
         this.footerSection = document.getElementById("footer");
     },
     methods: {
@@ -77,8 +77,8 @@ export default {
                 inline: "nearest",
             });
         },
-        toFlatformSection() {
-            this.flatformSection.scrollIntoView({
+        toPlatformSection() {
+            this.platformSection.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
                 inline: "nearest",
@@ -104,5 +104,16 @@ export default {
     .navbar-nav {
         cursor: pointer;
     }
+    @media (max-width: 768px) {
+        .navbar-expand-lg>.container, 
+        .navbar-expand-lg>
+        .container-fluid, 
+        .navbar-expand-lg>.container-lg, 
+        .navbar-expand-lg>.container-md, 
+        .navbar-expand-lg>.container-sm, 
+        .navbar-expand-lg>.container-xl {
+            padding-right: 0;
+        }   
+}
     
 </style>

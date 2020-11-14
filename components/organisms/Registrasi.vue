@@ -18,7 +18,7 @@
 
                         </div>
                         <div class="form-group">
-                            <label for="phone">Ponsel(Whatsaap)</label>
+                            <label for="phone">Ponsel (Whatsaap)</label>
                             <input @keypress="checkValuePhone" type="number" class="form-control" id="phone" placeholder="Contoh: 0822 2123 5445">
                             <small id="error-phone" class="form-text text-muted" style="color: red !important"></small>
 

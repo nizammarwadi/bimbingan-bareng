@@ -5,7 +5,7 @@
       <Service/>
       <Benefit/>
       <Teknologi/>
-      <Flatform/>
+      <Platform/>
       <FlowUser/>
       <Registrasi/>
       <Footer/>
@@ -18,7 +18,7 @@ import Intro from "~/components/organisms/Intro.vue"
 import Service from "~/components/organisms/service.vue"
 import Benefit from "~/components/organisms/Benefit.vue"
 import Teknologi from "~/components/organisms/Teknologi.vue"
-import Flatform from "~/components/organisms/Flatform.vue"
+import Platform from "~/components/organisms/Platform.vue"
 import FlowUser from "~/components/organisms/FlowUser.vue"
 import Registrasi from "~/components/organisms/Registrasi.vue"
 import Footer from "~/components/organisms/Footer.vue"
@@ -29,7 +29,7 @@ export default {
       Service: Service,
       Benefit: Benefit,
       Teknologi: Teknologi,
-      Flatform: Flatform,
+      Platform: Platform,
       FlowUser: FlowUser,
       Registrasi: Registrasi,
       Footer: Footer,
