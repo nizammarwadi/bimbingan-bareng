@@ -7,36 +7,36 @@
                     <form>
                         <div class="form-group">
                             <label for="name">Nama Lengkap</label>
-                            <input @keypress="checkValueName" type="text" class="form-control" id="name" placeholder="Contoh: Muda Juanri">
-                            <small id="error-name" class="form-text text-muted" style="color: red !important"></small>
+                            <input v-model="name" @keypress="checkValue('name')" type="text" class="form-control" id="name" placeholder="Contoh: Muda Juanri">
+                            <small id="error-name" class="form-text text-muted" style="color: red !important" v-if="errorName">{{ errorName }}</small>
 
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input @keypress="checkValueEmail" type="email" class="form-control" id="email" placeholder="Contoh: mudajuan@mail.com">
-                            <small id="error-email" class="form-text text-muted" style="color: red !important"></small>
+                            <input v-model="email" type="email" class="form-control" id="email" placeholder="Contoh: mudajuan@mail.com">
+                            <small id="error-email" class="form-text text-muted" style="color: red !important" v-if="errorEmail">{{errorEmail}}</small>
 
                         </div>
-                        <div class="form-group">
+                        <div class="form-group">    
                             <label for="phone">Ponsel (Whatsaap)</label>
-                            <input @keypress="checkValuePhone" type="number" class="form-control" id="phone" placeholder="Contoh: 0822 2123 5445">
-                            <small id="error-phone" class="form-text text-muted" style="color: red !important"></small>
+                            <input v-model="phone" type="number" class="form-control" id="phone" placeholder="Contoh: 0822 2123 5445">
+                            <small id="error-phone" class="form-text text-muted" style="color: red !important" v-if="errorPhone">{{errorEmail}}</small>
 
                         </div>
                         <div class="form-group">
                             <label for="project">Judul Projek</label>
-                            <input @keypress ="checkValueProject" type="text" class="form-control" id="project" placeholder="Contoh: Website portal berita kampus">
-                            <small id="error-project" class="form-text text-muted" style="color: red"></small>
+                            <input v-model="project" type="text" class="form-control" id="project" placeholder="Contoh: Website portal berita kampus">
+                            <small id="error-project" class="form-text text-muted" style="color: red !important" v-if="errorProject">{{errorProject}}</small>
 
                         </div>
                         <div class="form-group">
                             <label for="mesaage">Deskripsi Tentang Projek</label>
-                            <textarea @keypress="checkValueMessage" name="message" rows="5" id="message" class="form-control textarea" placeholder="Contoh: Jadi saya ingin membuat projek tugas akhir berupa web berita portal kampus"></textarea>
-                            <small id="error-message" class="form-text text-muted" style="color: red !important"></small>
+                            <textarea v-model="message" name="message" rows="5" id="message" class="form-control textarea" placeholder="Contoh: Jadi saya ingin membuat projek tugas akhir berupa web berita portal kampus"></textarea>
+                            <small id="error-message" class="form-text text-muted" style="color: red !important" v-if="errorMessage">{{errorMessage}}</small>
 
                         </div>
                         <div class="form-group flex-auto">
-                            <button type="submit" class="btn btn-info" @click="validataInput">Daptar</button>
+                            <button type="submit" class="btn btn-info" @click.prevent="clickRegister">Daptar</button>
                         </div>
                     </form>
                 </div>
@@ -61,71 +61,55 @@ export default {
             phone: '',
             project: '',
             message: '',
-            errorElementName: '',
-            errorElementEmail: '',
-            errorElementPhone: '',
-            errorElementProject: '',
-            errorElementMessage: '',
+            errorName: '',
+            errorEmail: '',
+            errorPhone: '',
+            errorProject: '',
+            errorMessage: '',
         }
     },
     mounted() {
-        this.name = document.getElementById('name')
-        this.email = document.getElementById('email')
-        this.phone = document.getElementById('phone')
-        this.project = document.getElementById('project')
-        this.message = document.getElementById('message')
-        this.errorElementName = document.getElementById('error-name')
-        this.errorElementEmail = document.getElementById('error-email')
-        this.errorElementPhone = document.getElementById('error-phone')
-        this.errorElementProject = document.getElementById('error-project')
-        this.errorElementMessage = document.getElementById('error-message')
+        
     },
     methods: {
+        clickRegister() {
+            this.validataInput()
+        },
         validataInput() {
-            if(name.value == '') {
-                errorElementName.innerHTML = 'nama tidak boleh kosong'
+            if (this.name == '') {
+                this.errorName = 'Nama tidak boleh kosong'
             }
-            if(email.value == '') {
-                errorElementEmail.innerHTML = 'email tidak boleh kosong'
+            if (this.email == '') {
+                this.errorEmail = 'email tidak boleh kosong'
             }
-            if(phone.value == '') {
-                errorElementPhone.innerHTML = 'wajib di isi'
+            if (this.phone == '') {
+                this.errorPhone = 'tidak boleh kosong'
             }
-            if(project.value == '') {
-                errorElementProject.innerHTML = 'wajib di isi'
+            if (this.project == '' ) {
+                this.errorProject = 'tidak boleh kosong'
             }
-            if(message.value == '') {
-                errorElementMessage.innerHTML = 'wajib di isi'
-            }
-            if(name.value !='' && email.value !='' && phone.value !='' && project.value !='' && message.value !='') {
-                alert(`${name.value}, ${email.value}, ${phone.value}, ${project.value}, ${message.value} di kirim`)
+            if (this.message == '') {
+                this.errorMessage = 'tidak boleh kosong'
             }
         },
-        checkValueName() {
-            if (name.value !='') {
-                errorElementName.innerHTML =''
+        checkValue(param) {
+            if (param == 'name') {
+                this.errorName = ''
+            }
+            if (param == 'email') {
+                this.errorEmail = ''
+            }
+            if (param == 'phone') {
+                this.errorPhone = ''
+            }
+            if (param == 'project') {
+                this.errorProject = ''
+            }
+            if (param == 'message') {
+                this.errorMessage = ''
             }
         },
-        checkValueEmail() {
-            if (email.value !='') {
-                errorElementEmail.innerHTML =''
-            }
-        }, 
-        checkValuePhone() {
-            if (phone.value !='') {
-                errorElementPhone.innerHTML = ''
-           }
-        },
-        checkValueProject() {
-            if (project.value !='') {
-                errorElementProject.innerHTML =''
-            }
-        },
-        checkValueMessage() {
-            if (message.value !='') {
-                errorElementMessage.innerHTML =''
-            }
-        },
+       
     }
 }
 </script>

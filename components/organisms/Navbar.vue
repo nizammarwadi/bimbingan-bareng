@@ -76,6 +76,7 @@ export default {
                 block: "start",
                 inline: "nearest",
             });
+             this.hideMenu()
         },
         toPlatformSection() {
             this.platformSection.scrollIntoView({
@@ -83,6 +84,7 @@ export default {
                 block: "start",
                 inline: "nearest",
             });
+             this.hideMenu()
         },
         toFooterSection() {
             this.footerSection.scrollIntoView({
@@ -90,6 +92,7 @@ export default {
                 block: "start",
                 inline: "nearest",
             })
+             this.hideMenu()
         }
     }
 }

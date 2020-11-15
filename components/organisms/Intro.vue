@@ -71,8 +71,8 @@ export default {
         .intro {
             display: block;
             margin: 50px 0px 0px 0px;
-            padding: 60px 0px 0px 0px;
-            widows: 100%;
+            padding: 60px 20px 0px;
+            width: 100%;
         }
         .intro-middle-left {
             margin-top: 40px;
@@ -95,7 +95,9 @@ export default {
             text-align: center;
         }
         .intro-middle-right img {
-            width: 100%;
+            width: 80%;
+            padding: 40px 0px;
+
             
         }
     }

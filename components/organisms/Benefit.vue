@@ -88,11 +88,11 @@ export default {
         font-weight: 400;
     }
 
-    @media(max-width: 768px) {
+    @media(max-width: 992px) {
         .benefit {
             width: 100%;
             margin-top: 30px;
-            padding: 70px 0px;
+            padding: 70px 20px;
             background-color: #f8f9fa;
         }
         .first-benefit {
@@ -107,8 +107,8 @@ export default {
             padding: 0px 0px;
         }
         .first-benefit-left {
-            width: 100%;
-            margin: 0px 0px;
+            width: 80%;
+            margin: 0px auto;
             padding: 0px 0px;
         }
         .first-benefit-left img {
