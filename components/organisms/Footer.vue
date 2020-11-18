@@ -15,7 +15,7 @@
                     <div class="col-md-5 col-sm-6 contact-us">
                         <div class="contact-us-mediasosial">
                             <h5>Media Sosial</h5>
-                            <a href="https://www.instagram.com/nizammarwadi/?hl=en"><img class="ig" src="~/assets/images/ig.png" alt="not found"></a>
+                            <a href="https://www.instagram.com/bimbinganbareng/"><img class="ig" src="~/assets/images/ig.png" alt="not found"></a>
                             <a href="https://www.facebook.com/nizam.marwadi/"><img class="fb" src="~/assets/images/fb.png" alt="not found"></a>
                         </div>
                         <div class="contact-us-address">

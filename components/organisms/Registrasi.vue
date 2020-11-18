@@ -13,25 +13,25 @@
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input v-model="email" type="email" class="form-control" id="email" placeholder="Contoh: mudajuan@mail.com">
+                            <input v-model="email" @keypress="checkValue('email')" type="email" class="form-control" id="email" placeholder="Contoh: mudajuan@mail.com">
                             <small id="error-email" class="form-text text-muted" style="color: red !important" v-if="errorEmail">{{errorEmail}}</small>
 
                         </div>
                         <div class="form-group">    
                             <label for="phone">Ponsel (Whatsaap)</label>
-                            <input v-model="phone" type="number" class="form-control" id="phone" placeholder="Contoh: 0822 2123 5445">
-                            <small id="error-phone" class="form-text text-muted" style="color: red !important" v-if="errorPhone">{{errorEmail}}</small>
+                            <input v-model="phone" @keypress="checkValue('phone')" type="number" class="form-control" id="phone" placeholder="Contoh: 0822 2123 5445">
+                            <small id="error-phone" class="form-text text-muted" style="color: red !important" v-if="errorPhone">{{errorPhone}}</small>
 
                         </div>
                         <div class="form-group">
                             <label for="project">Judul Projek</label>
-                            <input v-model="project" type="text" class="form-control" id="project" placeholder="Contoh: Website portal berita kampus">
+                            <input v-model="project" @keypress="checkValue('project')" type="text" class="form-control" id="project" placeholder="Contoh: Website portal berita kampus">
                             <small id="error-project" class="form-text text-muted" style="color: red !important" v-if="errorProject">{{errorProject}}</small>
 
                         </div>
                         <div class="form-group">
                             <label for="mesaage">Deskripsi Tentang Projek</label>
-                            <textarea v-model="message" name="message" rows="5" id="message" class="form-control textarea" placeholder="Contoh: Jadi saya ingin membuat projek tugas akhir berupa web berita portal kampus"></textarea>
+                            <textarea v-model="message" @keypress="checkValue('message')" name="message" rows="5" id="message" class="form-control textarea" placeholder="Contoh: Jadi saya ingin membuat projek tugas akhir berupa web berita portal kampus"></textarea>
                             <small id="error-message" class="form-text text-muted" style="color: red !important" v-if="errorMessage">{{errorMessage}}</small>
 
                         </div>
@@ -74,6 +74,22 @@ export default {
     methods: {
         clickRegister() {
             this.validataInput()
+            let payload = {
+                name:this.name,
+                email: this.email,
+                phone: this.phone,
+                project: this.project,
+                message: this.message
+            }
+            axios.post('https://bimbinganbareng-api.herokuapp.com/',payload)
+            .then(res=>{
+                console.log('kalau berhasil');
+                console.log(res);
+            })
+            .catch(err=>{
+                console.log('kalau error');
+                console.log(err);
+            })
         },
         validataInput() {
             if (this.name == '') {
@@ -109,7 +125,6 @@ export default {
                 this.errorMessage = ''
             }
         },
-       
     }
 }
 </script>
