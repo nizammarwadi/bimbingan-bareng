@@ -136,7 +136,7 @@ export default {
         font-size: 16px;
         font-weight: 700;
         padding: 15px;
-        margin-left: 110px;
+        margin-left: 100px;
         color: #0B090A;
     }
     @media(max-width: 578px) {

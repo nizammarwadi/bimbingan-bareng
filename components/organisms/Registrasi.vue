@@ -30,13 +30,16 @@
 
                         </div>
                         <div class="form-group">
-                            <label for="mesaage">Deskripsi Tentang Projek</label>
+                            <label for="message">Deskripsi Tentang Projek</label>
                             <textarea v-model="message" @keypress="checkValue('message')" name="message" rows="5" id="message" class="form-control textarea" placeholder="Contoh: Jadi saya ingin membuat projek tugas akhir berupa web berita portal kampus"></textarea>
                             <small id="error-message" class="form-text text-muted" style="color: red !important" v-if="errorMessage">{{errorMessage}}</small>
 
                         </div>
                         <div class="form-group flex-auto">
-                            <button type="submit" class="btn btn-info" @click.prevent="clickRegister">Daptar</button>
+                            <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" @click.prevent="clickRegister">Daptar</button>
+                        </div>
+                        <div v-if="sendData">
+                           <Modal/>
                         </div>
                     </form>
                 </div>
@@ -53,9 +56,15 @@
 </template>
 
 <script>
+import axios from 'axios'
+import Modal from "~/components/mollecules/Modal.vue"
 export default {
+    components: {
+        Modal: Modal,
+    },
     data() {
         return {
+            sendData: false,
             name: '',
             email: '',
             phone: '',
@@ -75,16 +84,18 @@ export default {
         clickRegister() {
             this.validataInput()
             let payload = {
-                name:this.name,
+                fullname:this.name,
                 email: this.email,
-                phone: this.phone,
-                project: this.project,
-                message: this.message
+                whatsapp: this.phone,
+                project_title: this.project,
+                project_description: this.message
             }
             axios.post('https://bimbinganbareng-api.herokuapp.com/',payload)
             .then(res=>{
                 console.log('kalau berhasil');
                 console.log(res);
+                this.sendData = true  
+                
             })
             .catch(err=>{
                 console.log('kalau error');

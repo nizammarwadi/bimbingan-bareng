@@ -33,7 +33,6 @@ export default {
 </script>
 
 <style>
-
     .intro{
         display: flex;
         justify-content: space-around;
@@ -96,7 +95,8 @@ export default {
         }
         .intro-middle-right img {
             width: 80%;
-            padding: 40px 0px;
+            padding: 0px 0px 40px 0px;
+            margin-top: 40px; 
 
             
         }

@@ -12,12 +12,12 @@
 
         
             <div class="service-card">
-                <img src="~/assets/images/vector2.png" alt="not found">
+                <img src="~/assets/images/vektor2.png" alt="not found">
                 <p>Membantu dan Mentoring Penelitian berupa Website dan Aplikasi Mobile</p>
             </div>
 
             <div class="service-card">
-                <img src="~/assets/images/vector3.png" alt="not found">
+                <img src="~/assets/images/vektor3.png" alt="not found">
                 <p>Tugas dan Projek Kampus berupa Website dan Mobile Aplikasi</p>
             </div>
         </div>
@@ -92,12 +92,16 @@ export default {
         }
         .service-content {
             display: block;
-            width: 90%;
+            width: 80%;
             margin: 20px auto;
         }
         .service-card {
             width: 100%;
             margin: 10px 0px;
+           
+        }
+        .service-card img {
+            width: 60px
         }
         
        
