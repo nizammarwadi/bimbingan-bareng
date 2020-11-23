@@ -36,7 +36,7 @@
 
                         </div>
                         <div class="form-group flex-auto">
-                            <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" @click.prevent="clickRegister">Daptar</button>
+                            <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" @click.prevent="clickRegister">Daftar</button>
                         </div>
                         <div v-if="sendData">
                            <Modal/>

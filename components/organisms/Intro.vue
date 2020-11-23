@@ -96,7 +96,8 @@ export default {
         .intro-middle-right img {
             width: 80%;
             padding: 0px 0px 40px 0px;
-            margin-top: 40px; 
+            margin-top: 80px;
+           
 
             
         }
