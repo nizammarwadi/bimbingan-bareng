@@ -18,7 +18,7 @@
 
             <div class="service-card">
                 <img src="~/assets/images/vektor3.png" alt="not found">
-                <p>Tugas dan Projek Kampus berupa Website dan Mobile Aplikasi</p>
+                <p>Tugas dan Projek Kampus berupa Website dan Aplikasi Mobile</p>
             </div>
         </div>
     </section>

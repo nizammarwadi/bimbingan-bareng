@@ -5,9 +5,9 @@
                 <div class="row">
                     <div class="col-md-5 col-sm-6 about-us">
                         <div class="about-us-title">
-                            <h5>Bimbinganbareng.com</h5>
+                            <h5>Bimbinganbareng.id</h5>
                         </div>
-                        <p>Bimbinganbareng.com adalah jenis layanan jasa membing dan mentoring kebutuhan penyelesaian projek berupa Tugas Akhir. Tugas Kampus maupun Penelitian dengan
+                        <p>Bimbinganbareng.id adalah jenis layanan jasa membing dan mentoring kebutuhan penyelesaian projek berupa Tugas Akhir. Tugas Kampus maupun Penelitian dengan
                             tujuan memberikan bekal hardskill yang mumpuni untuk mereka agar lebih cepat dan lebih mudah dalam menyelesaikan projeknya 
                         </p>
                         
@@ -34,7 +34,7 @@
             </div>
         </section>
         <section class="patent">
-            <p>©Copyright 2020 Bimbinganbareng.com</p>
+            <p>©Copyright 2020 Bimbinganbareng.id</p>
         </section>
     </footer>
     

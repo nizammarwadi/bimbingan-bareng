@@ -2,7 +2,7 @@
     <section class="intro">
         <div class="intro-middle-left">
             <p>Membantu bimbingan, mentoring dan penyelesaian Projek, Tugas Akhir  dan Penelitian berupa Website dan Aplikasi Mobile</p>
-            <button type="submit" class="intro-middle-button" @click="toRegistrasi">Daptar</button>
+            <button type="submit" class="intro-middle-button" @click="toRegistrasi">Daftar</button>
         </div>
         <div class="intro-middle-right">
             <img src="~/assets/images/intro.png" alt="not found" class="image">

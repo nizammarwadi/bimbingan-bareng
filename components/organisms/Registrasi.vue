@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-4">
-                    <h2 class="title">Daptar Sekarang</h2>
+                    <h2 class="title">Daftar Sekarang</h2>
                     <form>
                         <div class="form-group">
                             <label for="name">Nama Lengkap</label>
@@ -18,7 +18,7 @@
 
                         </div>
                         <div class="form-group">    
-                            <label for="phone">Ponsel (Whatsaap)</label>
+                            <label for="phone">Ponsel (Whatsapp)</label>
                             <input v-model="phone" @keypress="checkValue('phone')" type="number" class="form-control" id="phone" placeholder="Contoh: 0822 2123 5445">
                             <small id="error-phone" class="form-text text-muted" style="color: red !important" v-if="errorPhone">{{errorPhone}}</small>
 

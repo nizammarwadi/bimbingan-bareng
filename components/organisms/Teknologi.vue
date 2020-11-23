@@ -2,12 +2,12 @@
     <section id="teknologi" class="teknologi">
         <div class="teknologi-title">
             <h2 class="title">Teknologi yang Digunakan</h2>
-            <p class="text">Bimbinganbareng menggunakan dan stack yang paling banyak digunakan di dunia kerja dan Startup,diantaranya sebagai berikut</p>
+            <p class="text">Bimbinganbareng menggunakan teknologi dan stack yang paling banyak digunakan di dunia kerja dan Startup,diantaranya sebagai berikut</p>
         </div>
         <div class="teknologi-images">
             <div class="vue">
                 <img src="~/assets/images/vue.png" alt="not found">
-                <p>Vue.js</p>
+                <p>Vue js</p>
             </div>
             <div class="react">
                 <img src="~/assets/images/react.png" alt="not found">
@@ -16,7 +16,7 @@
             </div>
             <div class="node">
                 <img src="~/assets/images/node.png" alt="not found">
-                <p>Node.js</p>
+                <p>Node js</p>
                 
             </div>
             <div class="golang">

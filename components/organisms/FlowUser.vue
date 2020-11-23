@@ -6,7 +6,7 @@
         <div class="flowusers-image">
             <div class="daptar" style="width: 130px; ">
                 <img src="~/assets/images/daptar.png" alt="not found">
-                <p>Daptar</p>
+                <p>Daftar</p>
             </div>
             <div class="konsultasi" style="width: 130px; ">
                 <img src="~/assets/images/konsultasi.png" alt="not found">
