@@ -11,7 +11,6 @@
       <Footer/>
     </div>
 </template>
-
 <script>
 import Navbar from "~/components/organisms/Navbar.vue"
 import Intro from "~/components/organisms/Intro.vue"
@@ -33,7 +32,6 @@ export default {
       FlowUser: FlowUser,
       Registrasi: Registrasi,
       Footer: Footer,
-
     }
 }
 </script>

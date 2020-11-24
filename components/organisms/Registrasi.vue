@@ -31,7 +31,7 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Deskripsi Tentang Projek</label>
-                            <textarea v-model="message" @keypress="checkValue('message')" name="message" rows="5" id="message" class="form-control textarea" placeholder="Contoh: Jadi saya ingin membuat projek tugas akhir berupa web berita portal kampus"></textarea>
+                            <textarea v-model="message" @keypress="checkValue('message')" name="message" rows="5" id="message" class="form-control textarea" placeholder="Contoh: Saya ingin membuat projek tugas akhir berupa web berita portal kampus"></textarea>
                             <small id="error-message" class="form-text text-muted" style="color: red !important" v-if="errorMessage">{{errorMessage}}</small>
 
                         </div>
@@ -107,16 +107,16 @@ export default {
                 this.errorName = 'Nama tidak boleh kosong'
             }
             if (this.email == '') {
-                this.errorEmail = 'email tidak boleh kosong'
+                this.errorEmail = 'Email tidak boleh kosong'
             }
             if (this.phone == '') {
-                this.errorPhone = 'tidak boleh kosong'
+                this.errorPhone = 'Wajib di isi'
             }
             if (this.project == '' ) {
-                this.errorProject = 'tidak boleh kosong'
+                this.errorProject = 'Wajib di isi'
             }
             if (this.message == '') {
-                this.errorMessage = 'tidak boleh kosong'
+                this.errorMessage = 'Wajib di isi'
             }
         },
         checkValue(param) {

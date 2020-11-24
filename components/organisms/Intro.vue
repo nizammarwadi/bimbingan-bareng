@@ -58,12 +58,10 @@ export default {
         Top: 117.77px;
     }
     .intro-middle-button{
-        width: 141px;
-        height: 39.05px;
         background: #A4DEF9;
+        padding: 2px 40px;
         font-size: 18px;
         border: 1px solid #FFFFFF;
-        box-sizing: border-box;
         color: white;
     }
     @media(max-width: 992px) {

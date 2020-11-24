@@ -1,6 +1,7 @@
 <template>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
+            <img  class="image-navbar" src="~/assets/images/BIMBINGAN BARENG.png">
             <a class="navbar-brand text-white" href="https://wa.me/6282362574353?text=Oops...%0AJangan%20galau%20dan%20resah%2C%20kita%20siap%20bantu%20Bro%20and%20Sist%20...%0ASelamat%20datang%20di%20Bimbinganbareng.id%0A" target="_blank">Bimbinganbareng.id</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -101,11 +102,15 @@ export default {
 <style>
     .navbar {
         background-color: #A4DEF9;
-        font-size: 16px;
+        font-size: 17px;
         font-weight: 700;   
     }
     .navbar-nav {
         cursor: pointer;
+    }
+    .image-navbar {
+        margin-right: 5px;
+        width: 25px;
     }
     @media (max-width: 768px) {
         .navbar-expand-lg>.container, 
