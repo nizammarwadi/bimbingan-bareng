@@ -2,7 +2,11 @@
     <section class="intro">
         <div class="intro-middle-left">
             <p>Membantu bimbingan, mentoring dan penyelesaian Projek, Tugas Akhir  dan Penelitian berupa Website dan Aplikasi Mobile</p>
-            <button type="submit" class="intro-middle-button" @click="toRegistrasi">Daftar</button>
+            <!-- <button type="submit" class="intro-middle-button" @click="toRegistrasi">Daftar</button> -->
+            <Button
+            titleButton='Daftar'
+            @click-button='toRegistrasi'
+            />
         </div>
         <div class="intro-middle-right">
             <img src="~/assets/images/intro.png" alt="not found" class="image">
@@ -11,7 +15,11 @@
 </template>
 
 <script>
+import Button from '~/components/atoms/Button.vue'
 export default {
+    components: {
+        Button: Button
+    },
     data() {
         return{
             buttonElement: "",
@@ -57,7 +65,7 @@ export default {
         width: 377px;    
         Top: 117.77px;
     }
-    .intro-middle-button{
+    Button{
         background: #A4DEF9;
         padding: 2px 40px;
         font-size: 18px;
@@ -82,7 +90,7 @@ export default {
             padding: 0px 0px;
             width: 100%;
         }
-        .intro-middle-left .intro-middle-button {
+        .intro-middle-left Button {
             margin: 20px 0px 10px 0px;
         }
         .intro-middle-right {
