@@ -2,9 +2,10 @@
     <section class="intro">
         <div class="intro-middle-left">
             <p>Membantu bimbingan, mentoring dan penyelesaian Projek, Tugas Akhir  dan Penelitian berupa Website dan Aplikasi Mobile</p>
+            <!-- <button type="submit" class="intro-middle-button" @click="toRegistrasi">Daftar</button> -->
             <Button
-                titleBtn = 'Daftar'
-                @klik-button = 'toRegistrasi'
+            titleButton='Daftar'
+            @click-button='toRegistrasi'
             />
         </div>
         <div class="intro-middle-right">
@@ -64,7 +65,7 @@ export default {
         width: 377px;    
         Top: 117.77px;
     }
-    .intro-middle-left Button{
+    Button{
         background: #A4DEF9;
         padding: 2px 40px;
         font-size: 18px;
