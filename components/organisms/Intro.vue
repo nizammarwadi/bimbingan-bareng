@@ -72,6 +72,9 @@ export default {
         border: 1px solid #FFFFFF;
         color: white;
     }
+    button:hover {
+        border: 2px solid white;
+    }
     @media(max-width: 992px) {
         .intro {
             display: block;

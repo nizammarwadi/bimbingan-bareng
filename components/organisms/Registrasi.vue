@@ -35,14 +35,13 @@
                             <small id="error-message" class="form-text text-muted" style="color: red !important" v-if="errorMessage">{{errorMessage}}</small>
 
                         </div>
-                        <div class="form-group flex-auto">
+                        <div class="form-group flex-auto send-button">
                             <Button
                                 data-toggle = 'modal'
                                 datatarget = '#exampleModal'
-                                titleBtn = 'Daptar'
-                                @klik-button = 'clickRegister'
+                                titleButton = 'Daftar'
+                                @click-button = 'clickRegister'
                             />
-                            <!-- <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" @click.prevent="clickRegister">Daftar</button> -->
                         </div>
                         <div v-if="sendData">
                            <Modal/>
@@ -171,6 +170,10 @@ export default {
     }
     .row {
         align-items: center;
+    }
+    .send-button Button {
+        padding: 10px 30px;
+        border-radius: 5px;
     }
     @media (max-width: 768px) {
         .registrasi {
