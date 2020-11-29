@@ -36,7 +36,13 @@
 
                         </div>
                         <div class="form-group flex-auto">
-                            <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" @click.prevent="clickRegister">Daftar</button>
+                            <Button
+                                data-toggle = 'modal'
+                                datatarget = '#exampleModal'
+                                titleBtn = 'Daptar'
+                                @klik-button = 'clickRegister'
+                            />
+                            <!-- <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" @click.prevent="clickRegister">Daftar</button> -->
                         </div>
                         <div v-if="sendData">
                            <Modal/>
@@ -57,9 +63,11 @@
 
 <script>
 import axios from 'axios'
+import Button from "~/components/atoms/Button.vue"
 import Modal from "~/components/mollecules/Modal.vue"
 export default {
     components: {
+        Button: Button,
         Modal: Modal,
     },
     data() {
@@ -94,8 +102,7 @@ export default {
             .then(res=>{
                 console.log('kalau berhasil');
                 console.log(res);
-                this.sendData = true  
-                
+                this.sendData = true    
             })
             .catch(err=>{
                 console.log('kalau error');

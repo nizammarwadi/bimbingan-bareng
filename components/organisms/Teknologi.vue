@@ -7,7 +7,7 @@
         <div class="teknologi-images">
             <div class="vue">
                 <img src="~/assets/images/vue.png" alt="not found">
-                <p>Vue js</p>
+                <p>Vue Js</p>
             </div>
             <div class="react">
                 <img src="~/assets/images/react.png" alt="not found">
@@ -16,7 +16,7 @@
             </div>
             <div class="node">
                 <img src="~/assets/images/node.png" alt="not found">
-                <p>Node js</p>
+                <p>Node Js</p>
                 
             </div>
             <div class="golang">

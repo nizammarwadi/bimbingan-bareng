@@ -16,7 +16,7 @@
                         <div class="contact-us-mediasosial">
                             <h5>Media Sosial</h5>
                             <a href="https://www.instagram.com/bimbinganbareng/"><img class="ig" src="~/assets/images/ig.png" alt="not found"></a>
-                            <a href="https://www.facebook.com/nizam.marwadi/"><img class="fb" src="~/assets/images/fb.png" alt="not found"></a>
+                            <a href="#"><img class="fb" src="~/assets/images/fb.png" alt="not found"></a>
                         </div>
                         <div class="contact-us-address">
                             <h5>Alamat</h5>
@@ -25,8 +25,8 @@
                         <div class="contact-us-call">
                             <h5>Hubungi Kami</h5>
                             <div class="call-number">
-                                <a href="https://wa.me/6282362574353?text=Oops...%0AJangan%20galau%20dan%20resah%2C%20kita%20siap%20bantu%20Bro%20and%20Sist%20...%0ASelamat%20datang%20di%20Bimbinganbareng.id%0A" target="_blank"><img src="~/assets/images/call.png" alt="not found"></a>
-                                <p><a href="https://wa.me/6282362574353?text=Oops...%0AJangan%20galau%20dan%20resah%2C%20kita%20siap%20bantu%20Bro%20and%20Sist%20...%0ASelamat%20datang%20di%20Bimbinganbareng.id%0A" target="_blank">0823-6257-4353</a></p>
+                                <a href="https://wa.me/6282362574353?text=Selamat%20datang%20di%20Bimbinganbareng.id.%20Ada%20yang%20bisa%20kami%20bantu%3F" target="_blank"><img src="~/assets/images/call.png" alt="not found"></a>
+                                <p><a href="https://wa.me/6282362574353?text=Selamat%20datang%20di%20Bimbinganbareng.id.%20Ada%20yang%20bisa%20kami%20bantu%3F" target="_blank">0823-6257-4353</a></p>
                             </div>
                         </div>
                     </div>

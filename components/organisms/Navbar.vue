@@ -24,7 +24,7 @@
                         <a class="nav-link js-scroll-trigger text-white"  @click="toFooterSection">Tentang Kami</a>
                     </li>
                         <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger text-white" href="https://wa.me/6282362574353?text=Selamat%20Datang%20di%20Bimbinganbareng.com.%0AApa%20masalah%20bro and sist%3F%20ayo%20cerita%20....%0A" target="_blank">Hubungi</a>
+                        <a class="nav-link js-scroll-trigger text-white" href="https://wa.me/6282362574353?text=Selamat%20datang%20di%20Bimbinganbareng.id.%20Ada%20yang%20bisa%20kami%20bantu%3F" target="_blank">Hubungi</a>
                     </li>
                 </ul>
             </div>
