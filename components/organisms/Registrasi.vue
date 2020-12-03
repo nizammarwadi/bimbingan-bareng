@@ -38,13 +38,15 @@
                         <div class="form-group flex-auto send-button">
                             <Button
                                 data-toggle = 'modal'
-                                datatarget = '#exampleModal'
+                                data-target = '#exampleModal'
                                 titleButton = 'Daftar'
                                 @click-button = 'clickRegister'
                             />
                         </div>
-                        <div v-if="sendData">
-                           <Modal/>
+                        <div v-if= "sendData">
+                           <Modal
+                                @click-reset = 'clickClose'
+                           />
                         </div>
                     </form>
                 </div>
@@ -142,6 +144,13 @@ export default {
                 this.errorMessage = ''
             }
         },
+        clickClose() {
+            this.name = ''
+            this.email = ''
+            this.phone = ''
+            this.project = ''
+            this.message = ''
+        }
     }
 }
 </script>
@@ -203,6 +212,4 @@ export default {
             padding: 0px 0px;
         }
     }
-       
-
 </style>
